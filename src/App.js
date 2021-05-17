@@ -18,8 +18,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <Something />
     </div>
   );
 }
+
+const Something = () =><h1>HEEELLOOOOOOOOOOO!!!!!!</h1>
+
 
 export default App;
