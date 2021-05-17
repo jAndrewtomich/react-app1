@@ -3,36 +3,68 @@
 }
 
 .App-logo {
-  height: 80vmin;
+  width: 70vmin;
   pointer-events: none;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #f5e44f;
+  border-width: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 5s linear;
+    animation: App-logo-border-shine infinite 3s linear;
+    animation: App-logo-spin infinite 3s ease-in-out;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #7614bd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Press Start 2P';
+  color: #f0e112;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #f0e112;
 }
 
 @keyframes App-logo-spin {
-  from {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+
+  /*from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }*/
+}
+
+@keyframes App-logo-border-shine {
+  0% {
+    color: #f0e112;
   }
+  50% {
+    color: #110f01;
+  }
+  100% {
+    color: #f0e112;
+  }
+}
+
+a {
+  font-family: 'Press Start 2P';
 }
